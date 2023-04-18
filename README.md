@@ -1,7 +1,7 @@
-# E-Commerce Back End
+# Social Network API
   
   ## Description
-  This is an e-commerce back end application that allows the user to add, remove, and update products and their categories in the database.
+  This is a social network API back-end application that allows the user to add, remove, and update users and their thoughts in a MongoDB database.
 
 ---
 
@@ -18,18 +18,16 @@
 
   ## Installation
   This application uses the following node packages:<br><br>
-  [dotenv](https://www.npmjs.com/package/dotenv)<br>
   [Express](https://www.npmjs.com/package/express)<br>
-  [mysql2](https://www.npmjs.com/package/mysql2)<br>
-  [Sequelize](https://www.npmjs.com/package/sequelize)
+  [Mongoose](https://www.npmjs.com/package/mongoose)
 
 ---
 
   ## Usage
-  This is a node application that is invoked in the command-line. The user must first create the schema from the MySQL shell. Then the database must be seeded using the command: "npm run seed". Once the database is seeded the user can start the server by using the command: "npm start". Once the server is running, the user can retrieve data from the database by using the API endpoints that are set up in the routes directory.<br><br>
-  [Walkthrough video that demonstrates its functionality](https://drive.google.com/file/d/1_djH8XwT1gUmvlsSl1MrOrKzSZi8A-CO/view)<br><br>
+  This is a node application that is invoked in the command-line by using the command: node index.js. Once the server is running, the user can retrieve data from the database by using the API endpoints that are set up in the routes directory.<br><br>
+  [Walkthrough video that demonstrates its functionality]()<br><br>
   This screenshot shows route functionality in Insomnia:<br>
-  ![alt text](./assets/images/Screenshot%202023-03-08%20at%203.43.48%20PM.png)
+  ![alt text](./assets/images/Screenshot%202023-04-18%20at%203.56.25%20PM.png)
 
 ---
 

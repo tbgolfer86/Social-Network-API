@@ -1,4 +1,4 @@
-const { Schema, model } = require('mongoose');
+const { Schema, Types, model } = require('mongoose');
 
 // Schema to create Thought model
 const thoughtSchema = new Schema(
@@ -28,6 +28,37 @@ const thoughtSchema = new Schema(
     id: false,
   }
 );
+
+// Reaction schema to fill reactions field in Thought model
+const reactionSchema = new Schema(
+    {
+      reactionId: {
+          type: Schema.Types.ObjectId,
+          default: () => new Types.ObjectId(),
+      },
+      reactionBody: {
+          type: String,
+          required: true,
+          maxLength: 280,
+      },
+      username: {
+          type: String,
+          required: true,
+      },
+      createdAt: {
+          type: Date,
+          default: Date.now,
+          get: (date) => date.toDateString(),
+      },
+    },
+    {
+      toJSON: {
+        getters: true,
+        virtuals: true,
+      },
+      id: false,
+    }
+  );
 
 // Create a virtual property `reactionCount` that gets the amount of reactions per thought
 thoughtSchema.virtual('reactionCount').get(function () {

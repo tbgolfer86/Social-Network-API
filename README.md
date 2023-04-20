@@ -1,7 +1,7 @@
 # Social Network API
   
   ## Description
-  This is a social network API back-end application that allows the user to add, remove, and update users and their thoughts in a MongoDB database.
+  This is a social network API back-end application that allows the user to share their thoughts, react to friends' thoughts, and create a friend list. The application's data is stored using a MongoDB database.
 
 ---
 

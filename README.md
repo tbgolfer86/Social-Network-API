@@ -25,7 +25,7 @@
 
   ## Usage
   This is a node application that is invoked in the command-line by using the command: node index.js. Once the server is running the user can retrieve, edit, and/or delete data in the database by using the API endpoints that are set up in the routes directory.<br><br>
-  [Walkthrough video that demonstrates its functionality](https://1drv.ms/v/c/7afd0312d9c87570/EXB1yNkSA_0ggHrQNwAAAAABc-rQ8ZIYCrNRM-WFSGcTEg?e=k7nHGw)<br><br>
+  [Walkthrough video that demonstrates its functionality]()<br><br>
   This screenshot shows route functionality in Insomnia:<br>
   ![alt text](./assets/images/Screenshot%202023-04-18%20at%203.56.25%20PM.png)
 
